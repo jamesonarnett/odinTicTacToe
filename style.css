@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+  background-color: #8e44ad;
+}
+
+.body-small {
+  margin: 7rem auto;
+  width: 70vw;
+  height: 70vh;
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+}
+
+.center-all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.player1,
+.player2 {
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.pButton {
+  background-color: white;
+  border: 1px solid black;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.center {
+  display: flex;
+}
+
+.button-div {
+  text-align: center;
+}
+
+.btn-flip {
+  font-size: 20px;
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #8e44ad;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #adadaf;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #adadaf;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: #323237;
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+}
+
+.fifth {
+  border-color: #8e44ad;
+  border-radius: 0;
+  color: #8e44ad;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+}
+.fifth:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #8e44ad;
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+}
+
+.fifth:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.fifth:hover:after {
+  width: 110%;
+}
+
+.chosen {
+  background-color: #8e44ad;
+  color: #fff;
+}

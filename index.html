@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin TicTacToe!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One|Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body-small">
+      <h1 style="text-align: center">Tic-Tac-Toe</h1>
+      <div class="center-all">
+        <div class="player1">
+          <h2>Player 1</h2>
+          <h1>X</h1>
+          <div class="center">
+            <p id="player1" class="pButton fifth">HUMAN</p>
+            <p id="ai1" class="pButton ai fifth">AI</p>
+          </div>
+        </div>
+        <div class="game-board"></div>
+        <div class="player2">
+          <h2>Player 2</h2>
+          <h1>O</h1>
+          <div class="center">
+            <p id="player2" class="pButton fifth">HUMAN</p>
+            <p id="ai2" class="pButton ai fifth">AI</p>
+          </div>
+        </div>
+      </div>
+      <div class="button-div">
+        <a
+          id="playButton"
+          href="#"
+          class="btn-flip"
+          data-back="NOW"
+          data-front="PLAY"
+        ></a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
