@@ -9,10 +9,10 @@
       href="https://fonts.googleapis.com/css?family=Fredoka+One|Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="body-small">
+    <div id="startScreen" class="body-small">
       <h1 style="text-align: center">Tic-Tac-Toe</h1>
       <div class="center-all">
         <div class="player1">
@@ -43,6 +43,25 @@
         ></a>
       </div>
     </div>
+
+    <section id="section" class="hidden">
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+
+      <div id="winningMessage" class="win-message">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+      </div>
+    </section>
     <script src="index.js"></script>
   </body>
 </html>

@@ -6,8 +6,12 @@ const aiPlayer2 = document.getElementById("ai2");
 const player1 = document.getElementById("player1");
 const player2 = document.getElementById("player2");
 
+const seeGameScreen = document.getElementById("section");
+const removeStartScreen = document.getElementById("startScreen");
+
 playButton.addEventListener("click", (e) => {
-  console.log("Hello");
+  removeStartScreen.classList.add("hidden");
+  seeGameScreen.classList.remove("hidden");
 });
 
 aiPlayer1.addEventListener("click", (e) => {
