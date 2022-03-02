@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Fredoka+One|Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div id="startScreen" class="body-small">
@@ -45,21 +45,21 @@
     </div>
 
     <section id="section" class="hidden">
-      <div class="board" id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+      <div class="gameboard">
+        <div class="field" data-index="0"></div>
+        <div class="field" data-index="1"></div>
+        <div class="field" data-index="2"></div>
+        <div class="field" data-index="3"></div>
+        <div class="field" data-index="4"></div>
+        <div class="field" data-index="5"></div>
+        <div class="field" data-index="6"></div>
+        <div class="field" data-index="7"></div>
+        <div class="field" data-index="8"></div>
       </div>
 
-      <div id="winningMessage" class="win-message">
+      <div style="text-align: center" id="message" class="win-message">
         <div data-winning-message-text></div>
-        <button id="restartButton">Restart</button>
+        <button id="restart-button">Restart</button>
       </div>
     </section>
     <script src="index.js"></script>
